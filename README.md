@@ -1,5 +1,8 @@
 # ha-assistd
 
+[![hacs_badge](https://img.shields.io/badge/HACS-Custom-orange.svg?style=for-the-badge)](https://github.com/hacs/integration)
+[![Open your Home Assistant instance and open a repository inside the Home Assistant Community Store.](https://my.home-assistant.io/badges/hacs_repository.svg)](https://my.home-assistant.io/redirect/hacs_repository/?owner=sudoxnym&repository=ha-assistd&category=integration)
+
 home assistant custom component that exposes assist-exposed entities via REST API.
 
 ## why
@@ -19,9 +22,11 @@ assistd fixes that. one endpoint. only the entities you've chosen to expose.
    ```
 3. restart home assistant
 
-### hacs (coming soon)
+### hacs
 
-add as custom repository: `https://github.com/sudoxnym/ha-assistd`
+[![Open your Home Assistant instance and open a repository inside the Home Assistant Community Store.](https://my.home-assistant.io/badges/hacs_repository.svg)](https://my.home-assistant.io/redirect/hacs_repository/?owner=sudoxnym&repository=ha-assistd&category=integration)
+
+or manually: HACS → Integrations → ⋮ → Custom repositories → add `https://github.com/sudoxnym/ha-assistd`
 
 ## usage
 
