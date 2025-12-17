@@ -4,6 +4,7 @@ from __future__ import annotations
 import logging
 from typing import Any
 
+from aiohttp import web
 from homeassistant.components.http import HomeAssistantView
 from homeassistant.core import HomeAssistant, callback
 from homeassistant.helpers import entity_registry as er
@@ -32,7 +33,7 @@ class AssistdView(HomeAssistantView):
         """Initialize the view."""
         self._hass = hass
 
-    async def get(self, request) -> dict[str, Any]:
+    async def get(self, request: web.Request) -> web.Response:
         """Return list of entities exposed to Assist/conversation."""
         registry = er.async_get(self._hass)
         exposed = []
